@@ -15,12 +15,12 @@ public class DestroyOutOfBounds : MonoBehaviour
             // Прожектайл уничтожается за пределами видимости по заданному значению topBound.
             Destroy(gameObject);
         }
-        // если позиция по оси z < lowerBound
+        // или же позиция по оси z < lowerBound
         else if(transform.position.z < lowerBound)
         {
             // выводим надпись в консоле конец игры.
             Debug.Log("GameOver");
-            // Мобы уничтожается за пределами видимости по заданному значению lowerBound. 
+            // Мобы уничтожаются за пределами видимости по заданному значению lowerBound.
             Destroy(gameObject);
         }
     }
